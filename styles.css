@@ -131,6 +131,10 @@ nav.scrolled {
     width: 100%;
 }
 
+.nav-links a.active::after {
+    width: 100%;
+}
+
 .btn-rezervace {
     background: var(--color-primary) !important;
     color: var(--color-white) !important;
@@ -430,7 +434,6 @@ section {
     aspect-ratio: 1/1;
     overflow: hidden;
     object-fit: cover;
-    object-position: -85px center;
 }
 
 .about-photo:hover img {
@@ -893,7 +896,9 @@ footer {
 }
 
 .massage-gallery img {
-    height: 500px;
+    height: auto;
+    object-fit: unset;
+    object-position: unset;
 }
 
 .photo-gallery img:hover {
@@ -969,6 +974,12 @@ footer {
     .contact-map-container {
         position: relative;
         top: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .massage-gallery {
+        grid-template-columns: 1fr;
     }
 }
 
