@@ -539,7 +539,6 @@ section {
 /* Services */
 .services-intro {
     margin: 0 auto 3rem;
-    text-align: center;
     color: var(--color-text-light);
     font-size: 1.1rem;
     line-height: 1.8;
@@ -554,6 +553,10 @@ section {
 
 .services-intro a:hover {
     color: var(--color-secondary);
+}
+
+.services-intro p:not(:last-child) {
+    margin-bottom: 1.5rem;
 }
 
 .services-grid {
