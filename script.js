@@ -5,6 +5,10 @@ const navLinks = document.getElementById("navLinks");
 if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener("click", () => {
         navLinks.classList.toggle("active");
+        mobileMenuBtn.setAttribute(
+            "aria-expanded",
+            navLinks.classList.contains("active"),
+        );
     });
 }
 
