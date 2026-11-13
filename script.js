@@ -48,11 +48,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 const sections = document.querySelectorAll("section[id]");
 const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
 
-if (
-    sections.length &&
-    navAnchors.length &&
-    window.location.pathname.endsWith("index.html")
-) {
+const path = window.location.pathname;
+const isHomePage = path.endsWith("/") || path.endsWith("index.html");
+
+if (sections.length && navAnchors.length && isHomePage) {
     const setActiveLink = (id) => {
         navAnchors.forEach((link) => {
             link.classList.toggle(
