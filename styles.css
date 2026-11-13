@@ -856,6 +856,17 @@ section {
     display: block;
 }
 
+.contact-legal p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.contact-legal-note {
+    margin-top: 0.5rem;
+    font-size: 0.85rem !important;
+    opacity: 0.8;
+}
+
 /* Footer */
 footer {
     background: var(--color-primary);
@@ -894,6 +905,62 @@ footer {
 .footer-credit a:hover {
     color: var(--color-accent);
     opacity: 1;
+}
+
+/* Footer – odkaz GDPR */
+.footer-legal {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-legal a {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.footer-legal a:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+/* GDPR stránka */
+.legal-content h3 {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin: 2.5rem 0 0.75rem;
+}
+
+.legal-content p,
+.legal-content li {
+    color: var(--color-text-light);
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+}
+
+.legal-content ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.legal-content a {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.legal-updated {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
 /* Exercise page */
